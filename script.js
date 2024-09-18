@@ -1,9 +1,9 @@
 // 1
-alert("Я JavaScript!");
+//alert("Я JavaScript!");
 // 2
-let name = "Иван";
-let admin = name;
-alert(admin);
+//let name = "Иван";
+//let admin = name;
+//alert(admin);
 
 // 3
 //let name = "Ilya"; 
@@ -108,6 +108,25 @@ alert(admin);
 //}
 
 //22 
-if (-1 || 0) alert('first');
-if (-1 && 0) alert('second');
-if (null || -1 && 1) alert('third');
+//if (-1 || 0) alert('first');
+//if (-1 && 0) alert('second');
+//if (null || -1 && 1) alert('third');
+
+//23
+let login = prompt("Введите логин: ");
+
+if (login === "Админ") {
+    let password = prompt("Введите пароль:");
+
+    if (password === "Я главный") {
+        alert("Здравствуйте!");
+    } else if (password === null || password === "") {
+        alert("Отменено");
+    } else {
+        alert("Неверный пароль");
+    }
+} else if (login === null || login === "") {
+    alert("Отменено");
+} else {
+    alert("Я вас не знаю");
+}
