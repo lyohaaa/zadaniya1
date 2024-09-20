@@ -1,5 +1,6 @@
 // 1
 //alert("Я JavaScript!");
+
 // 2
 //let name = "Иван";
 //let admin = name;
